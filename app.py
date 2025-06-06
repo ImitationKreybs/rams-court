@@ -22,7 +22,7 @@ def init_database():
     conn = get_db_connection()
     cursor = conn.cursor()
    
-   #hello
+   #commit demo
     # Create users table
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
