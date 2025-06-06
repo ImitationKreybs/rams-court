@@ -16,12 +16,13 @@ DB_CONFIG = {
 }
  
 def get_db_connection():
-    return mysql.connector.connect(**DB_CONFIG)
+    return mysql.connector.connect(**DB_CONFIG) 
  
 def init_database():
     conn = get_db_connection()
     cursor = conn.cursor()
    
+   #hello
     # Create users table
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
